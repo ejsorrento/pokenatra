@@ -1,8 +1,10 @@
+# in order to reload
 require 'active_record'
-require 'ffaker'
-require 'pg'
+
 require_relative 'connection'
 require_relative '../models/pokemon'
+# require_relative '..models/trainer'
+
 
 Pokemon.destroy_all
 Pokemon.create(name: "Charmander", cp: rand(800), poke_type: "fire", img_url: "https://img.pokemondb.net/artwork/charmander.jpg")
